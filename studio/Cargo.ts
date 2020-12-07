@@ -1,9 +1,10 @@
-export class Cargo {
+import { Payload } from './Payload';
+
+export class Cargo implements Payload {
     massKg: number;
     material: string;
-    constructor(massKg: number, material: string) {
-        this.massKg = this.massKg;
+    constructor(astronaut: Payload, material: string) {
+        this.massKg = astronaut.massKg;
         this.material = material;
     }
-    //payload interface here?
 }

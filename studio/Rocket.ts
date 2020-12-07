@@ -1,3 +1,7 @@
+import { Payload } from './Payload';
+import { Astronaut } from './Astronaut';
+import { Cargo } from './Cargo';
+
 export class Rocket {
     name: string;
     totalCapacityKg: number;
@@ -11,7 +15,7 @@ export class Rocket {
     //     //stuff here
     // }
     // currentMassKg(): number {
-    //     //stuff here
+    //     return this.sumMass
     // }
     // canAdd(item: Payload): boolean {
     //     //stuff here

@@ -7,19 +7,19 @@ export class Rocket {
         this.name = name;
         this.totalCapacityKg = totalCapacityKg;
     }
-    sumMass(items: Payload[]): number {
-        //stuff here
-    }
-    currentMassKg(): number {
-        //stuff here
-    }
-    canAdd(item: Payload): boolean {
-        //stuff here
-    }
-    addCargo(cargo: Cargo): boolean {
-        //stuff here
-    }
-    addAstronaut(astronaut: Astronaut): boolean {
-        //stuff here
-    }
+    // sumMass(items: Payload[]): number {
+    //     //stuff here
+    // }
+    // currentMassKg(): number {
+    //     //stuff here
+    // }
+    // canAdd(item: Payload): boolean {
+    //     //stuff here
+    // }
+    // addCargo(cargo: Cargo): boolean {
+    //     //stuff here
+    // }
+    // addAstronaut(astronaut: Astronaut): boolean {
+    //     //stuff here
+    // }
 }

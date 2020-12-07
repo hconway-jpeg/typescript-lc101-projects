@@ -21,13 +21,25 @@ export class Rocket {
     currentMassKg(): number {
         return this.sumMass(this.cargoItems) + this.sumMass(this.astronauts);
     }
-    // canAdd(item: Payload): boolean {
-    //     //stuff here
-    // }
-    // addCargo(cargo: Cargo): boolean {
-    //     //stuff here
-    // }
-    // addAstronaut(astronaut: Astronaut): boolean {
-    //     //stuff here
-    // }
+    canAdd(item: Payload): boolean {
+        if (this.currentMassKg() + item.massKg <= this.totalCapacityKg) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    addCargo(cargo: Cargo): boolean {
+        if (this.canAdd(cargo) === true) {
+            this.cargoItems.push(cargo);
+        } else {
+            return false;
+        }
+    }
+    addAstronaut(astronaut: Astronaut): boolean {
+        if (this.canAdd(astronaut) === true) {
+            this.astronauts.push(astronaut);
+        } else {
+            return false;
+        }
+    }
 }

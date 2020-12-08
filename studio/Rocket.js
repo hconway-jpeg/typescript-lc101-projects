@@ -8,9 +8,8 @@ var Rocket = /** @class */ (function () {
     }
     Rocket.prototype.sumMass = function (items) {
         var itemTotal = 0;
-        for (var _i = 0, items_1 = items; _i < items_1.length; _i++) {
-            var item = items_1[_i];
-            itemTotal += item.massKg;
+        for (var i = 0; i < items.length; i++) {
+            itemTotal += items[i].massKg;
         }
         return itemTotal;
     };

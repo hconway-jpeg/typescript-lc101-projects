@@ -28,6 +28,7 @@ var Rocket = /** @class */ (function () {
     Rocket.prototype.addCargo = function (cargo) {
         if (this.canAdd(cargo) === true) {
             this.cargoItems.push(cargo);
+            return true;
         }
         else {
             return false;
@@ -36,6 +37,7 @@ var Rocket = /** @class */ (function () {
     Rocket.prototype.addAstronaut = function (astronaut) {
         if (this.canAdd(astronaut) === true) {
             this.astronauts.push(astronaut);
+            return true;
         }
         else {
             return false;
